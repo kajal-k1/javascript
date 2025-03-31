@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+*{
+    padding: 0px;
+    margin:0px ;
+    box-sizing:border-box ;
+}
+
+    div,section{
+       background-color:lawngreen ; 
+       color: black;
+       border:1px solid burlywood ;
+    width:100%;
+    height:100px;
+    margin:20px 5px;
+    }
+</style>
+
+</head>
+<body>
+    <div id="first_divison" class="first_class"></div>  
+<div id="second_divison" class="first_class"></div>
+<div id="third_divison" class="first_class" ></div>
+<div id="fourth_divison" class="first_class"></div>
+<section></section>
+<section></section>
+
+<button onclick="changeDivColor()"
+style="padding: 10px;width:100px; margin:20px;background-color:red;color: black;border:2px solid white;border-radius:10px ;">Click Me</button>
+<script>
+    //**************************************************
+    //////docuement.getElementsbyID
+    //let changeDivColor=()=>{
+
+    //document.getElementById("first_divison").innerHTML="<h1>welcome to the page</h1>"
+
+     //let second_divison=document.getElementById("second_divison")
+     //second_divison.innerHTML="<h1>welcome to the page</h1>"
+    //second_divison.style.backgroundColor="pink"
+
+    //document.getElementById("third_divison").innerHTML="<h2>this is the third divison</h2>"
+
+ //let fourth_divison=document.getElementById("fourth_divison")
+ //fourth_divison.innerHTML="<h2>this is the fourth divison</h2>"
+//fourth_divison.style.backgroundColor="pink"
+    //}
+//***********************************************
+
+//***********************************************
+//docuement.getElementsByClassName
+
+// let changeDivColor=()=>{
+// let first_class=document.getElementsByClassName("class3")
+// console.log(first_class)
+// for (el of first_class){
+// el.innerHTML="<h1>this is the first class</h2>"
+// el.style.backgroundColor="yellow"
+// }
+// }
+
+//***************************************************
+
+//**************************************************
+//getElementByTagName
+// let changeDivColor=()=>{
+// let first_class=document.getElementsByTagName('div')
+// console.log(first_class)
+// for(el of first_class){
+// el.innerHTML="<h1>This is the first webpage</h1>"
+// el.style.backgroundColor="brown"
+// }
+// }
+//***************************************************
+
+// ************************************************
+//quertselector
+// let changeDivColor=()=>{
+// let class_name=document.querySelector("div")
+//     class_name.innerHTML="<h1>this is the right one</h2>"
+//         class_name.style.backgroundColor="violet"
+// }
+
+//************************************************
+
+//*************************************************
+//queryselectorbyall
+//for section
+let changeDivColor=()=>{
+let class_name=document.querySelectorAll("section")
+for(el of class_name){
+  el.innerHTML="GOOD MORNING"
+  el.style.backgroundColor="pink"  
+}
+}
+
+
+//for divison
+// let changeDivColor=()=>{
+// let class_name=document.querySelectorAll("div")
+// for(el of class_name){
+//     el.innerHTML="<h1>welcome to HTML</h1>"
+//     el.style.backgroundColor="orange"
+// }
+// }
+</script>
+</body>
+</html>

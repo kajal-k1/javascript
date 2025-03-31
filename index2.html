@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        padding: 0px;
+        margin:0px ;
+        box-sizing:border-box ;
+    }
+</style>
+
+
+</head>
+<body>
+     <button onclick="createDiv()"
+     style="padding:10px; background-color:violet ;color: black; width:100px;margin:20px;border:1px,solid ; border-radius:10px  ;" >Click on me</button>
+<div id="first">
+    <h2 id="firstdiv">this is the main heading <small style="color: blueviolet;padding: 20px;"onClick="removeElement()">Remove</small></h2>
+<input id="name" value="hello"/>
+</div>
+
+<script>
+let createDiv=()=>{
+    let heading=document.createElement("h1")
+    heading.innerHTML="this is the first heading"
+    heading.style.color="pink"
+    heading.style.backgroundColor="yellow"
+   heading.style.textAlign="center"
+    heading.className="firstdiv"
+    heading.setAttribute('id',"firstdiv")
+    heading.setAttribute("class","firstdiv1 firstdiv2 firstdiv3 firstdiv4"  )
+    heading.classList.add("hello")
+console.log(heading.classList);
+
+console.log(document.querySelector("#name").value)/// to get the value back
+document.querySelector("#name").value="hii"////to modify the content
+
+ document.querySelector('#first').appendChild(heading)
+}
+
+let removeElement=()=>{
+let child=document.querySelector('#firstdiv')
+document.querySelector('#first').removeChild(child)
+
+}
+
+</script>
+
+
+
+</body>
+</html>
